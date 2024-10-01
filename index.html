@@ -2,61 +2,177 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal Solutions</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legal Solutions</title>
 
-    <!-- web icon -->
-    <link rel="shortcut icon" href="images/business.png" type="image/x-icon">
-    
-    <!-- daisyUI and tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- web icon -->
+  <link rel="shortcut icon" href="images/business.png" type="image/x-icon">
 
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+  <!-- daisyUI and tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- tailwind customize configuration -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- tailwind customize configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary-color': '#414040',
           }
         }
-      </script>
+      }
+    }
+  </script>
 
 
-    <!-- style -->
-     <style>
-        .main-font{
-            font-family: "EB Garamond", serif;
-        }
-        .other-font{
-            font-family: "Poppins", sans-serif;
-        }
-     </style>
+  <!-- style -->
+  <style>
+    .main-font {
+      font-family: "EB Garamond", serif;
+    }
+
+    .other-font {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
+  <header class="max-w-7xl mx-auto">
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start ">
+          <div class="dropdown other-font">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="text-[#707070] menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Home</a></li>
 
-    </header>
+              <li>
+                <details>
+                  <summary>Services</summary>
+                  <ul class="p-2">
+                    <li><a href="">a</a></li>
+                    <li><a href="">b</a></li>
+                  </ul>
+                </details>
+              </li>
 
-    <main>
+              <li>
+                <details>
+                  <summary>Cases</summary>
+                  <ul class="p-2">
+                    <li><a href="">a</a></li>
+                    <li><a href="">b</a></li>
+                  </ul>
+                </details>
+              </li>
 
-    </main>
+              <li>
+                <details>
+                  <summary>Blog</summary>
+                  <ul class="p-2">
+                    <li><a href="">a</a></li>
+                    <li><a href="">b</a></li>
+                  </ul>
+                </details>
+              </li>
 
-    <footer>
+              <li>
+                <details>
+                  <summary>Contact Us</summary>
+                  <ul class="p-2">
+                    <li><a href="">a</a></li>
+                    <li><a href="">b</a></li>
+                  </ul>
+                </details>
+              </li>
 
-    </footer>
+            </ul>
+          </div>
+          <img class="w-11" src="images/business.png" alt="">
+          <a class="btn btn-ghost text-3xl font-extrabold main-font primary-color">Justice</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-[#707070]">
+            <li><a>Home</a></li>
+
+            <li>
+              <details>
+                <summary>Services</summary>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary>Cases</summary>
+                <ul class="p-2">
+                  <li><a href="">a</a></li>
+                  <li><a href="">b</a></li>
+                </ul>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary>Blog</summary>
+                <ul class="p-2">
+                  <li><a href="">a</a></li>
+                  <li><a href="">b</a></li>
+                </ul>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary>Contact Us</summary>
+                <ul class="p-2">
+                  <li><a href="">a</a></li>
+                  <li><a href="">b</a></li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button class="rounded-lg bg-[#B68C5A] px-5 lg:px-8 py-4 lg:py-5 lg:text-lg font-semibold text-white">
+            Free Consultation
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+  </main>
+
+  <footer>
+
+  </footer>
 </body>
 
 </html>
